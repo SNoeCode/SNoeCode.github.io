@@ -1,0 +1,953 @@
+{
+  "aries": {
+    "sign-info-img": "vids/traits/ari.webp",
+    "sign-img-detail": "vids/about/ari-i.webp",
+    "name": "Aries",
+    "dates": "March 21 – April 19",
+    "element": "Fire",
+    "modality": "Cardinal",
+    "polarity": "Positive",
+    "ruling_planet": "Mars",
+    "house": "1st House",
+    "symbol": "Ram",
+    "image": "vids/aries-season.webp",
+    "keywords": [
+      "Action",
+      "Initiation",
+      "Courage",
+      "Drive",
+      "Competition"
+    ],
+    "lucky_colors": [
+      "Red",
+      "Scarlet",
+      "Burnt Orange"
+    ],
+    "lucky_numbers": [
+      1,
+      9,
+      19
+    ],
+    "lucky_day": "Tuesday",
+    "lucky_gemstone": "Diamond",
+    "body_part": "Head and face",
+    "tarot_card": "The Emperor",
+    "season": "Spring",
+    "strengths": [
+      "Bold",
+      "Determined",
+      "Confident",
+      "Passionate",
+      "Natural leader"
+    ],
+    "weaknesses": [
+      "Impulsive",
+      "Short-tempered",
+      "Aggressive",
+      "Selfish",
+      "Lack of follow-through"
+    ],
+    "traits": [
+      "Competitive",
+      "Direct",
+      "Restless",
+      "Spontaneous",
+      "Pioneering",
+      "Blunt",
+      "Fiercely independent"
+    ],
+    "love_style": "Aries loves passionately and pursues with intensity. They need a partner who matches their energy and is not intimidated by their directness. They fall fast but can lose interest if the chase ends too quickly.",
+    "career_strengths": "Thrives in fast-paced, high-stakes roles. Natural entrepreneur, athlete, military leader, or emergency responder. Excels at starting projects and leading teams into new territory.",
+    "friendship_style": "Aries is a loyal, fun, and energetic friend who is always up for adventure. They can be blunt, but their honesty is rarely malicious. They prefer action-based friendships over emotional processing.",
+    "shadow_side": "When unchecked, Aries can become domineering, reckless, and prone to burning bridges. Their impatience causes them to act without thinking, leading to avoidable conflicts and half-finished goals.",
+    "spiritual_lesson": "Learning patience and the value of slowing down. Aries must learn that not every situation calls for charging forward — sometimes the bravest act is to wait.",
+    "famous_examples": [
+      "Lady Gaga",
+      "Elton John",
+      "Leonardo da Vinci",
+      "Maya Angelou"
+    ],
+    "compatibility": [
+      "Leo",
+      "Sagittarius",
+      "Gemini"
+    ],
+    "least_compatible": [
+      "Cancer",
+      "Capricorn"
+    ],
+    "description": "Aries is the first sign of the zodiac and a natural-born trailblazer. Ruled by Mars, the planet of war and drive, Aries energy is raw, electric, and unstoppable. These individuals are wired for action — they don't just want to do things, they want to do them first. Aries is the spark that ignites the fire, the voice that says 'let's go' before anyone else has finished thinking. They are courageous to the point of recklessness and inspired by challenge. As the cardinal fire sign, Aries initiates, pioneers, and leads — often into uncharted territory. They have a magnetic self-assurance that draws others in, but their need for independence can make sustained commitment difficult. At their best, Aries is a fierce champion of the underdog and an unstoppable force for change."
+  },
+  "taurus": {
+    "sign-info-img": "vids/traits/tar.gif",
+    "sign-img-detail": "vids/about/tar-i.webp",
+    "name": "Taurus",
+    "dates": "April 20 – May 20",
+    "element": "Earth",
+    "modality": "Fixed",
+    "polarity": "Negative",
+    "ruling_planet": "Venus",
+    "house": "2nd House",
+    "symbol": "Bull",
+    "image": "vids/taurus-season.webp",
+    "keywords": [
+      "Stability",
+      "Comfort",
+      "Security",
+      "Sensuality",
+      "Persistence"
+    ],
+    "lucky_colors": [
+      "Green",
+      "Pink",
+      "Earthy Brown"
+    ],
+    "lucky_numbers": [
+      2,
+      6,
+      24
+    ],
+    "lucky_day": "Friday",
+    "lucky_gemstone": "Emerald",
+    "body_part": "Throat and neck",
+    "tarot_card": "The Hierophant",
+    "season": "Spring",
+    "strengths": [
+      "Reliable",
+      "Patient",
+      "Grounded",
+      "Persistent",
+      "Financially savvy"
+    ],
+    "weaknesses": [
+      "Stubborn",
+      "Possessive",
+      "Resistant to change",
+      "Self-indulgent",
+      "Materialistic"
+    ],
+    "traits": [
+      "Sensual",
+      "Methodical",
+      "Steadfast",
+      "Practical",
+      "Aesthetic",
+      "Slow to anger but fierce when provoked",
+      "Deep need for routine"
+    ],
+    "love_style": "Taurus loves with total devotion and needs security above all else in relationships. They are deeply sensual and express love through touch, gifts, and acts of physical care. They are slow to open up but fiercely loyal once committed.",
+    "career_strengths": "Excels in fields requiring patience, precision, and long-term thinking — finance, real estate, agriculture, art, culinary arts, and architecture. Their persistence allows them to outlast others in competitive industries.",
+    "friendship_style": "Taurus is the most dependable friend in the zodiac. They show up, remember birthdays, and provide a calm, stable presence. They prefer deep, long-standing friendships over a large social circle.",
+    "shadow_side": "Taurus can become deeply entrenched in comfort zones, refusing to evolve even when circumstances demand it. Their possessiveness can suffocate partners and their stubbornness can fracture relationships over minor disagreements.",
+    "spiritual_lesson": "Releasing attachment. Taurus must learn that true security comes from within, not from controlling external things — money, people, or routines.",
+    "famous_examples": [
+      "Adele",
+      "Dwayne Johnson",
+      "Audrey Hepburn",
+      "William Shakespeare"
+    ],
+    "compatibility": [
+      "Virgo",
+      "Capricorn",
+      "Cancer"
+    ],
+    "least_compatible": [
+      "Aquarius",
+      "Leo"
+    ],
+    "description": "Taurus is the zodiac's great sensualist — a fixed earth sign ruled by Venus, the planet of love, beauty, and pleasure. Where Aries lights the spark, Taurus builds the hearth. They are deeply rooted in the physical world and take genuine pleasure in its finest offerings: good food, beautiful environments, physical affection, and the slow accumulation of comfort. Taurus does not rush — they are perhaps the most patient sign in the zodiac, willing to work steadily and quietly toward goals that others might abandon. Their determination borders on stubbornness, and their need for stability can make them resistant to even positive change. But at their core, Taurus is motivated by love — love of beauty, love of those they care for, and love of the life they are quietly, deliberately building."
+  },
+  "gemini": {
+    "sign-info-img": "vids/traits/gem.gif",
+    "sign-img-detail": "vids/about/gem-i.webp",
+    "name": "Gemini",
+    "dates": "May 21 – June 20",
+    "element": "Air",
+    "modality": "Mutable",
+    "polarity": "Positive",
+    "ruling_planet": "Mercury",
+    "house": "3rd House",
+    "symbol": "Twins",
+    "image": "vids/gemini-season.webp",
+    "keywords": [
+      "Communication",
+      "Curiosity",
+      "Adaptability",
+      "Duality",
+      "Witty"
+    ],
+    "lucky_colors": [
+      "Yellow",
+      "Light Blue",
+      "Silver"
+    ],
+    "lucky_numbers": [
+      3,
+      5,
+      14
+    ],
+    "lucky_day": "Wednesday",
+    "lucky_gemstone": "Agate",
+    "body_part": "Arms, hands, and lungs",
+    "tarot_card": "The Lovers",
+    "season": "Late Spring",
+    "strengths": [
+      "Quick-witted",
+      "Versatile",
+      "Eloquent",
+      "Intellectually curious",
+      "Charming"
+    ],
+    "weaknesses": [
+      "Inconsistent",
+      "Indecisive",
+      "Easily bored",
+      "Gossipy",
+      "Superficial"
+    ],
+    "traits": [
+      "Talkative",
+      "Playful",
+      "Mentally agile",
+      "Dualistic",
+      "Easily distracted",
+      "Socially chameleon-like",
+      "Multi-passionate"
+    ],
+    "love_style": "Gemini needs mental stimulation above all in love. They are drawn to clever, witty partners and can quickly lose interest if conversation runs dry. They need freedom and variety, and resist any relationship that feels confining or overly routine.",
+    "career_strengths": "Natural communicators suited for journalism, writing, teaching, marketing, broadcasting, sales, and comedy. Their ability to absorb and synthesize information from multiple sources makes them exceptional in fast-paced environments.",
+    "friendship_style": "Gemini is the social butterfly of the zodiac — they know everyone and make any gathering more interesting. They are funny, curious, and endlessly entertaining. However, they can struggle with depth and consistency in friendship.",
+    "shadow_side": "Gemini's duality can tip into two-facedness. They may say one thing to one person and another to the next, not out of malice but because they genuinely see multiple sides. Their inconsistency can feel like unreliability to more grounded signs.",
+    "spiritual_lesson": "Committing to depth. Gemini must learn to slow the mental chatter long enough to feel — to go beneath the surface of ideas, relationships, and self-knowledge.",
+    "famous_examples": [
+      "Marilyn Monroe",
+      "Kanye West",
+      "Prince",
+      "Angelina Jolie"
+    ],
+    "compatibility": [
+      "Libra",
+      "Aquarius",
+      "Aries"
+    ],
+    "least_compatible": [
+      "Virgo",
+      "Pisces"
+    ],
+    "description": "Gemini is the zodiac's quicksilver intellect — a mutable air sign ruled by Mercury, planet of communication, language, and the mind. Born between two worlds, Gemini is defined by duality: they can hold two opposing views simultaneously, adapt effortlessly to different environments, and be both the life of the party and a thoughtful conversationalist in the same evening. They are perpetually curious and feed on novelty — new ideas, new people, new experiences. Their minds move at remarkable speed, connecting disparate concepts and finding humor in the unexpected. The Twins represent this dual nature: there is always more than one Gemini in the room. This makes them endlessly fascinating and sometimes maddeningly hard to pin down. At their best, Gemini is the bridge between worlds — translating complexity into clarity and bringing people together through the power of words."
+  },
+  "cancer": {
+    "sign-info-img": "vids/traits/can.gif",
+    "sign-img-detail": "vids/about/can-i.webp",
+    "name": "Cancer",
+    "dates": "June 21 – July 22",
+    "element": "Water",
+    "modality": "Cardinal",
+    "polarity": "Negative",
+    "ruling_planet": "Moon",
+    "house": "4th House",
+    "symbol": "Crab",
+    "image": "vids/cancer-season.webp",
+    "keywords": [
+      "Emotion",
+      "Nurturing",
+      "Home",
+      "Memory",
+      "Protection"
+    ],
+    "lucky_colors": [
+      "Silver",
+      "White",
+      "Pale Blue"
+    ],
+    "lucky_numbers": [
+      2,
+      7,
+      11
+    ],
+    "lucky_day": "Monday",
+    "lucky_gemstone": "Moonstone",
+    "body_part": "Chest, breasts, and stomach",
+    "tarot_card": "The Chariot",
+    "season": "Summer",
+    "strengths": [
+      "Deeply empathetic",
+      "Nurturing",
+      "Intuitive",
+      "Fiercely loyal",
+      "Imaginative"
+    ],
+    "weaknesses": [
+      "Moody",
+      "Overly sensitive",
+      "Manipulative when hurt",
+      "Codependent",
+      "Unable to let go"
+    ],
+    "traits": [
+      "Deeply sentimental",
+      "Home-oriented",
+      "Quietly perceptive",
+      "Tenacious",
+      "Emotionally complex",
+      "Protective to a fault",
+      "Cycles through emotions like the moon"
+    ],
+    "love_style": "Cancer loves with their entire soul and needs emotional safety before they open up. They are devoted, romantic, and deeply attentive to a partner's needs. However, they can struggle with insecurity and may retreat into their shell when hurt rather than communicating openly.",
+    "career_strengths": "Excels in caregiving professions — nursing, counseling, teaching, social work — as well as creative fields that honor emotion: writing, acting, photography, and food. Their business instincts are sharper than most realize.",
+    "friendship_style": "Cancer is the friend who remembers everything and cares deeply. They create warm, safe spaces for those they love and are the first to show up with food in a crisis. They need friends who can reciprocate emotional depth.",
+    "shadow_side": "Cancer's emotional intensity can curdle into manipulation, passive aggression, and martyrdom. Their long memories mean they hold grudges with great precision. When their need for security is unmet, they can cling, smother, or retreat entirely.",
+    "spiritual_lesson": "Learning emotional independence. Cancer must discover that their deep need to be needed can prevent both their own growth and the growth of those they love.",
+    "famous_examples": [
+      "Princess Diana",
+      "Meryl Streep",
+      "Robin Williams",
+      "Frida Kahlo"
+    ],
+    "compatibility": [
+      "Scorpio",
+      "Pisces",
+      "Taurus"
+    ],
+    "least_compatible": [
+      "Aries",
+      "Libra"
+    ],
+    "description": "Cancer is the zodiac's great nurturer and its most emotionally complex sign. Ruled by the Moon — which governs tides, cycles, and the unconscious — Cancer feels everything deeply and often processes the world through memory, instinct, and emotion rather than logic. As the cardinal water sign, Cancer initiates through feeling: they are the ones who create home, build family bonds, and hold the emotional core of any group together. Their famous shell is not weakness — it is wisdom. Cancer moves sideways before moving forward, protecting what is tender until trust is established. Once you are let in, you are held with a devotion that is nearly unmatched in the zodiac. Cancer's great gift is that they make others feel truly seen, loved, and at home."
+  },
+  "leo": {
+    "sign-info-img": "vids/traits/leo.gif",
+    "sign-img-detail": "vids/about/leo-i.webp",
+    "name": "Leo",
+    "dates": "July 23 – August 22",
+    "element": "Fire",
+    "modality": "Fixed",
+    "polarity": "Positive",
+    "ruling_planet": "Sun",
+    "house": "5th House",
+    "symbol": "Lion",
+    "image": "vids/leo-season.webp",
+    "keywords": [
+      "Creativity",
+      "Confidence",
+      "Expression",
+      "Royalty",
+      "Generosity"
+    ],
+    "lucky_colors": [
+      "Gold",
+      "Orange",
+      "Royal Purple"
+    ],
+    "lucky_numbers": [
+      1,
+      3,
+      10
+    ],
+    "lucky_day": "Sunday",
+    "lucky_gemstone": "Ruby",
+    "body_part": "Heart and spine",
+    "tarot_card": "Strength",
+    "season": "Summer",
+    "strengths": [
+      "Magnetic",
+      "Generous",
+      "Courageous",
+      "Loyal",
+      "Inspirational"
+    ],
+    "weaknesses": [
+      "Vain",
+      "Attention-seeking",
+      "Domineering",
+      "Inflexible",
+      "Easily wounded pride"
+    ],
+    "traits": [
+      "Theatrical",
+      "Warm-hearted",
+      "Playful",
+      "Ambitious",
+      "Protective of loved ones",
+      "Extraordinarily loyal",
+      "Naturally commands the room"
+    ],
+    "love_style": "Leo loves extravagantly and needs to feel adored. They are romantic, generous, and creative partners who put on a show — and they need a partner who appreciates the performance. Their pride is their greatest vulnerability in love; criticism cuts deep.",
+    "career_strengths": "Born for the stage — literally or metaphorically. Acting, music, politics, entrepreneurship, fashion, and any field where presence and personality matter. Their leadership inspires fierce loyalty from teams.",
+    "friendship_style": "Leo is the friend who hypes you up, throws the best parties, and fights for you fiercely. They are generous and warm. In return, they need admiration and genuine appreciation — friendships that feel one-sided drain them quickly.",
+    "shadow_side": "Leo's hunger for recognition can slide into ego. They may unconsciously make every situation about themselves or expect a level of devotion that leaves others feeling unseen. Their fixed nature makes them slow to admit when they are wrong.",
+    "spiritual_lesson": "Discovering that true confidence needs no audience. Leo must learn to shine for the sake of shining — not for the applause.",
+    "famous_examples": [
+      "Barack Obama",
+      "Madonna",
+      "Whitney Houston",
+      "Coco Chanel"
+    ],
+    "compatibility": [
+      "Aries",
+      "Sagittarius",
+      "Gemini"
+    ],
+    "least_compatible": [
+      "Taurus",
+      "Scorpio"
+    ],
+    "description": "Leo is the zodiac's sun incarnate — a fixed fire sign ruled by the Sun itself, the center of our solar system. There is something luminous about Leo energy: they walk into rooms and light changes. This is not always arrogance — it is often simply the warmth of a sign whose very essence is self-expression and generosity of spirit. Leo rules the 5th house of creativity, pleasure, and children, and so they carry a certain childlike joy in their love of life's theater. They are fiercely devoted to those they love and will defend them with the full force of their considerable pride. Where Aries is a warrior, Leo is a king or queen — dignified, magnanimous, and deeply aware of how they appear to others. At their highest expression, Leo uses their visibility not to serve the ego but to uplift everyone in their kingdom."
+  },
+  "virgo": {
+    "sign-info-img": "vids/traits/vir.webp",
+    "sign-img-detail": "vids/about/vir-i.webp",
+    "name": "Virgo",
+    "dates": "August 23 – September 22",
+    "element": "Earth",
+    "modality": "Mutable",
+    "polarity": "Negative",
+    "ruling_planet": "Mercury",
+    "house": "6th House",
+    "symbol": "Virgin",
+    "image": "vids/virgo-season.webp",
+    "keywords": [
+      "Service",
+      "Precision",
+      "Analysis",
+      "Health",
+      "Discernment"
+    ],
+    "lucky_colors": [
+      "Navy",
+      "Beige",
+      "Forest Green"
+    ],
+    "lucky_numbers": [
+      5,
+      14,
+      23
+    ],
+    "lucky_day": "Wednesday",
+    "lucky_gemstone": "Sapphire",
+    "body_part": "Digestive system and intestines",
+    "tarot_card": "The Hermit",
+    "season": "Late Summer",
+    "strengths": [
+      "Analytical",
+      "Detail-oriented",
+      "Hardworking",
+      "Deeply helpful",
+      "Highly intelligent"
+    ],
+    "weaknesses": [
+      "Overly critical",
+      "Anxious",
+      "Perfectionistic to a fault",
+      "Difficulty delegating",
+      "Tendency toward self-criticism"
+    ],
+    "traits": [
+      "Meticulous",
+      "Quietly observant",
+      "Systematic",
+      "Reserved",
+      "Modest",
+      "Deeply skilled",
+      "Constantly improving"
+    ],
+    "love_style": "Virgo expresses love through acts of service — noticing small details, solving problems, and showing up quietly and reliably. They need a partner who understands that their criticism comes from caring. They are slow to open emotionally but deeply committed once they do.",
+    "career_strengths": "Thrives in research, medicine, data analysis, editing, writing, accounting, nutrition, and any field requiring precision and methodical thinking. Virgo's ability to see the flaw in any system makes them invaluable in quality control and strategy.",
+    "friendship_style": "Virgo is the friend who actually follows through — who remembers your appointment, proofreads your email, and gives honest advice without sugarcoating. They may seem reserved at first but form deep, lasting bonds built on reliability.",
+    "shadow_side": "Virgo's inner critic rarely rests, and it can be projected outward — nitpicking others, cataloguing flaws, and setting impossibly high standards. Their anxiety about imperfection can paralyze them and exhaust those around them.",
+    "spiritual_lesson": "Accepting imperfection — in themselves and others. Virgo must learn that 'good enough' is sometimes the most loving and wise choice.",
+    "famous_examples": [
+      "Beyoncé",
+      "Freddie Mercury",
+      "Agatha Christie",
+      "Keanu Reeves"
+    ],
+    "compatibility": [
+      "Taurus",
+      "Capricorn",
+      "Cancer"
+    ],
+    "least_compatible": [
+      "Gemini",
+      "Sagittarius"
+    ],
+    "description": "Virgo is the zodiac's master craftsperson — a mutable earth sign ruled by Mercury, channeling the planet's analytical power into the physical world. Where Gemini uses Mercury's gift for social intelligence, Virgo uses it for dissection and refinement. They are the editors of the zodiac: they see not what is, but what could be improved. This is both their genius and their burden. Virgo rules the 6th house of health, routine, and service — and service is at the core of their identity. They find meaning in being useful, in solving problems, in the slow and careful craft of doing something well. Virgos are often underestimated because they prefer to work quietly and let their results speak. But behind that modest exterior is one of the sharpest, most capable minds in any room."
+  },
+  "libra": {
+    "sign-info-img": "vids/traits/lib.gif",
+    "sign-img-detail": "vids/about/lib-i.webp",
+    "name": "Libra",
+    "dates": "September 23 – October 22",
+    "element": "Air",
+    "modality": "Cardinal",
+    "polarity": "Positive",
+    "ruling_planet": "Venus",
+    "house": "7th House",
+    "symbol": "Scales",
+    "image": "vids/libra-season.webp",
+    "keywords": [
+      "Harmony",
+      "Balance",
+      "Beauty",
+      "Partnership",
+      "Justice"
+    ],
+    "lucky_colors": [
+      "Pink",
+      "Lavender",
+      "Pale Blue"
+    ],
+    "lucky_numbers": [
+      6,
+      9,
+      15
+    ],
+    "lucky_day": "Friday",
+    "lucky_gemstone": "Opal",
+    "body_part": "Kidneys and lower back",
+    "tarot_card": "Justice",
+    "season": "Autumn",
+    "strengths": [
+      "Diplomatic",
+      "Charming",
+      "Fair-minded",
+      "Idealistic",
+      "Gifted mediator"
+    ],
+    "weaknesses": [
+      "Indecisive",
+      "Conflict-avoidant",
+      "People-pleasing",
+      "Superficial",
+      "Easily swayed"
+    ],
+    "traits": [
+      "Socially graceful",
+      "Aesthetically driven",
+      "Partnership-oriented",
+      "Peacekeeping",
+      "Romantic",
+      "Intellectually curious",
+      "Seeks fairness in all things"
+    ],
+    "love_style": "Libra is the sign of partnership and thrives in committed, balanced relationships. They are romantic idealists who love love itself. Their challenge is being direct about their needs — they often defer to keep the peace, which breeds quiet resentment over time.",
+    "career_strengths": "Exceptional in law, diplomacy, design, fashion, public relations, mediation, and the arts. Their ability to see all sides of an argument makes them superb negotiators and strategists.",
+    "friendship_style": "Libra is a gracious, socially intelligent friend who creates warmth and beauty wherever they go. They are excellent listeners and natural peacemakers. However, their people-pleasing can make it hard to know what they truly think.",
+    "shadow_side": "Libra's obsession with balance can itself become imbalanced. They can be so focused on avoiding conflict that they never take a stand — and their relationships suffer for it. Their vanity and social comparison can also surface as envy.",
+    "spiritual_lesson": "Learning to hold their own perspective without needing consensus. Libra must discover that peace built on suppressed truth is not real peace.",
+    "famous_examples": [
+      "Mahatma Gandhi",
+      "Serena Williams",
+      "Oscar Wilde",
+      "Brigitte Bardot"
+    ],
+    "compatibility": [
+      "Gemini",
+      "Aquarius",
+      "Leo"
+    ],
+    "least_compatible": [
+      "Cancer",
+      "Capricorn"
+    ],
+    "description": "Libra is the zodiac's great diplomat — a cardinal air sign ruled by Venus, straddling the line between thought and beauty, justice and pleasure. As the only inanimate symbol in the zodiac, the Scales represent Libra's deep commitment to balance — not just aesthetically, but morally and socially. Libra enters every room asking 'what does this situation need to be fair?' and arranging itself accordingly. They are extraordinarily socially attuned and find great meaning in connection, partnership, and shared experience. The 7th house they rule is literally the house of partnership — Libra is perhaps the most 'other-oriented' sign in the zodiac. At their best, Libra brings warring parties together, creates beauty from chaos, and holds space for every perspective with genuine grace and intelligence."
+  },
+  "scorpio": {
+    "sign-info-img": "vids/traits/sco.gif",
+    "sign-img-detail": "vids/about/sco-i.webp",
+    "name": "Scorpio",
+    "dates": "October 23 – November 21",
+    "element": "Water",
+    "modality": "Fixed",
+    "polarity": "Negative",
+    "ruling_planet": "Pluto",
+    "ruling_planet_traditional": "Mars",
+    "house": "8th House",
+    "symbol": "Scorpion",
+    "image": "vids/scorpio-season.webp",
+    "keywords": [
+      "Intensity",
+      "Transformation",
+      "Power",
+      "Truth",
+      "Depth"
+    ],
+    "lucky_colors": [
+      "Black",
+      "Maroon",
+      "Deep Crimson"
+    ],
+    "lucky_numbers": [
+      8,
+      11,
+      18
+    ],
+    "lucky_day": "Tuesday",
+    "lucky_gemstone": "Topaz",
+    "body_part": "Reproductive organs and pelvis",
+    "tarot_card": "Death",
+    "season": "Autumn",
+    "strengths": [
+      "Perceptive",
+      "Resourceful",
+      "Emotionally resilient",
+      "Intensely loyal",
+      "Strategically brilliant"
+    ],
+    "weaknesses": [
+      "Jealous",
+      "Secretive",
+      "Unforgiving",
+      "Obsessive",
+      "Manipulative"
+    ],
+    "traits": [
+      "Penetrating gaze and mind",
+      "Drawn to taboo and hidden truth",
+      "Survives what would break others",
+      "Magnetic",
+      "Private by nature",
+      "Holds power quietly",
+      "Transforms repeatedly throughout life"
+    ],
+    "love_style": "Scorpio loves with consuming, total intensity. There is no halfway — they are all in or not at all. They need complete trust and emotional depth in a partner and are deeply threatened by betrayal. They can be possessive but also profoundly transformative to love.",
+    "career_strengths": "Thrives in fields involving investigation, psychology, surgery, research, finance (especially other people's money), occult sciences, law enforcement, and crisis management. Their ability to operate under pressure and see through deception is exceptional.",
+    "friendship_style": "Scorpio is selective with friendship but fiercely devoted once trust is established. They are the friend who keeps your secrets, tells you hard truths, and will destroy someone's reputation if you are genuinely wronged. Not to be crossed.",
+    "shadow_side": "Scorpio's shadow is formidable: revenge fantasies, control, emotional warfare, and an inability to release old wounds. Their sting is their last resort, but they do not forget what made them use it.",
+    "spiritual_lesson": "Forgiveness and release. Scorpio must learn to let transformations complete — to stop clutching the old self while trying to be reborn.",
+    "famous_examples": [
+      "Marie Curie",
+      "Hillary Clinton",
+      "Pablo Picasso",
+      "Leonardo DiCaprio"
+    ],
+    "compatibility": [
+      "Cancer",
+      "Pisces",
+      "Virgo"
+    ],
+    "least_compatible": [
+      "Leo",
+      "Aquarius"
+    ],
+    "description": "Scorpio is the zodiac's great transformer — a fixed water sign co-ruled by Mars (traditional) and Pluto (modern), the planet of death, rebirth, and the underworld. Scorpio energy is the deepest, most concentrated, and most potentially powerful in the zodiac. Where Cancer feels emotions openly, Scorpio dives beneath them — mining the depths for truth, meaning, and power. They rule the 8th house: sex, death, shared resources, and occult knowledge — the hidden architecture of existence. Scorpio is not morbid; they simply refuse to look away from the parts of life others pretend don't exist. This gives them an uncanny capacity for resilience and transformation. They do not just survive difficulty — they are forged by it. At their highest expression, Scorpio is the healer, the detective, and the guide into shadow — the one who makes the dark navigable."
+  },
+  "sagittarius": {
+    "sign-info-img": "vids/traits/sag.webp",
+    "sign-img-detail": "vids/about/sag-i.webp",
+    "name": "Sagittarius",
+    "dates": "November 22 – December 21",
+    "element": "Fire",
+    "modality": "Mutable",
+    "polarity": "Positive",
+    "ruling_planet": "Jupiter",
+    "house": "9th House",
+    "symbol": "Archer",
+    "image": "vids/sag-season.webp",
+    "keywords": [
+      "Adventure",
+      "Wisdom",
+      "Freedom",
+      "Philosophy",
+      "Expansion"
+    ],
+    "lucky_colors": [
+      "Purple",
+      "Royal Blue",
+      "Turquoise"
+    ],
+    "lucky_numbers": [
+      3,
+      7,
+      21
+    ],
+    "lucky_day": "Thursday",
+    "lucky_gemstone": "Turquoise",
+    "body_part": "Hips, thighs, and liver",
+    "tarot_card": "Temperance",
+    "season": "Winter",
+    "strengths": [
+      "Optimistic",
+      "Philosophically curious",
+      "Wildly enthusiastic",
+      "Honest",
+      "Generous"
+    ],
+    "weaknesses": [
+      "Tactless",
+      "Commitment-averse",
+      "Overconfident",
+      "Restless",
+      "Prone to excess"
+    ],
+    "traits": [
+      "Freedom-seeking",
+      "Intellectually expansive",
+      "Culturally curious",
+      "Hilariously blunt",
+      "Visionary",
+      "Loves debate",
+      "Dislikes being told what to do"
+    ],
+    "love_style": "Sagittarius needs a partner who is also their adventure companion, intellectual sparring partner, and best friend. They resist anything that feels like a cage. They are passionate and exciting to be with but struggle with long-term commitment unless they feel fundamentally free.",
+    "career_strengths": "Thrives as a professor, travel writer, philosopher, foreign correspondent, entertainer, publisher, lawyer, or spiritual teacher. Any role that combines knowledge, freedom, and the ability to roam.",
+    "friendship_style": "Sagittarius is the most fun friend in the zodiac — spontaneous, hilarious, and always planning the next adventure. They are brutally honest but genuinely mean well. Their unreliability can be frustrating to more grounded friends.",
+    "shadow_side": "Sagittarius's relentless optimism can slide into denial. Their bluntness becomes cruelty when untempered. Their love of freedom becomes avoidance of responsibility, and their confidence becomes arrogance.",
+    "spiritual_lesson": "Developing discernment. Sagittarius must learn to aim the arrow carefully — not every truth needs to be said, not every horizon needs to be chased.",
+    "famous_examples": [
+      "Winston Churchill",
+      "Jane Austen",
+      "Jim Morrison",
+      "Tina Turner"
+    ],
+    "compatibility": [
+      "Aries",
+      "Leo",
+      "Libra"
+    ],
+    "least_compatible": [
+      "Virgo",
+      "Pisces"
+    ],
+    "description": "Sagittarius is the zodiac's philosopher-adventurer — a mutable fire sign ruled by Jupiter, the largest planet and the great expander of consciousness and fortune. Where Aries fires the arrow on instinct, Sagittarius fires it toward a distant horizon they have studied and chosen. They are seekers: of truth, of meaning, of the next mountain range to cross. Their ruling 9th house encompasses philosophy, religion, higher education, foreign travel, and the law — all realms of expanded understanding. Sagittarius needs the world to be bigger than it is. They are naturally optimistic because they believe, genuinely and deeply, that there is always more to discover, more to learn, more to become. At their best, Sagittarius is a teacher, a guide, and an incurable believer in human potential — the friend who makes you feel like the horizon is always within reach."
+  },
+  "capricorn": {
+    "sign-info-img": "vids/traits/cap.gif",
+    "sign-img-detail": "vids/about/cap-i.webp",
+    "name": "Capricorn",
+    "dates": "December 22 – January 19",
+    "element": "Earth",
+    "modality": "Cardinal",
+    "polarity": "Negative",
+    "ruling_planet": "Saturn",
+    "house": "10th House",
+    "symbol": "Goat",
+    "image": "vids/capricorn-season.webp",
+    "keywords": [
+      "Discipline",
+      "Ambition",
+      "Structure",
+      "Legacy",
+      "Mastery"
+    ],
+    "lucky_colors": [
+      "Black",
+      "Brown",
+      "Charcoal"
+    ],
+    "lucky_numbers": [
+      4,
+      8,
+      13
+    ],
+    "lucky_day": "Saturday",
+    "lucky_gemstone": "Garnet",
+    "body_part": "Knees, bones, and teeth",
+    "tarot_card": "The Devil",
+    "season": "Winter",
+    "strengths": [
+      "Strategically ambitious",
+      "Disciplined",
+      "Responsible",
+      "Resilient",
+      "Wise beyond their years"
+    ],
+    "weaknesses": [
+      "Emotionally withholding",
+      "Pessimistic",
+      "Rigid",
+      "Workaholic tendencies",
+      "Status-obsessed"
+    ],
+    "traits": [
+      "Self-reliant",
+      "Dry-humored",
+      "Calculating in the best sense",
+      "Quietly status-aware",
+      "Ages in reverse",
+      "Takes the long view",
+      "Earns everything slowly and keeps it"
+    ],
+    "love_style": "Capricorn loves with quiet, devoted action. They are not the most verbally romantic sign, but they build — they plan for a future with you, they are reliable through difficulty, and they protect what they invest in. They need a partner who respects their ambition and does not require constant emotional availability.",
+    "career_strengths": "Capricorn is the CEO sign — built for long-term leadership, institutional power, and mastery of their field. Finance, law, government, engineering, medicine, and any hierarchical structure that rewards effort and strategy.",
+    "friendship_style": "Capricorn is selective but deeply loyal. They prefer a small circle of proven people. They are the friend who gives real, actionable advice rather than empty comfort — and who shows up when it actually counts.",
+    "shadow_side": "Capricorn's drive to climb can make them cold, calculating, and willing to sacrifice relationships on the altar of achievement. Their fear of failure drives a relentless self-criticism that they often project onto others.",
+    "spiritual_lesson": "Allowing themselves to receive — love, rest, play. Capricorn must learn that achievement without joy is just labor, and that they are worthy of softness.",
+    "famous_examples": [
+      "Michelle Obama",
+      "David Bowie",
+      "Martin Luther King Jr.",
+      "Dolly Parton"
+    ],
+    "compatibility": [
+      "Taurus",
+      "Virgo",
+      "Scorpio"
+    ],
+    "least_compatible": [
+      "Aries",
+      "Libra"
+    ],
+    "description": "Capricorn is the zodiac's master builder — a cardinal earth sign ruled by Saturn, planet of time, discipline, limits, and earned wisdom. Where Aries charges in and Taurus builds comfort, Capricorn builds empires. They play the longest game in the zodiac — patient, strategic, and deeply aware that real power and mastery are built slowly, step by step up the mountain. Their symbol is the Sea-Goat: a creature that climbs from the depths of the sea to the heights of the peaks — suggesting that Capricorn carries emotional depth beneath a composed exterior, and that their ambition is driven not just by ego but by something older and more existential. They rule the 10th house of career, public reputation, and legacy. Capricorn does not just want success — they want to leave something lasting. At their finest, they are the elders, the founders, the builders of institutions that outlive them."
+  },
+  "aquarius": {
+    "sign-info-img": "vids/traits/aqu.gif",
+    "sign-img-detail": "vids/about/aqu-i.webp",
+    "name": "Aquarius",
+    "dates": "January 20 – February 18",
+    "element": "Air",
+    "modality": "Fixed",
+    "polarity": "Positive",
+    "ruling_planet": "Uranus",
+    "ruling_planet_traditional": "Saturn",
+    "house": "11th House",
+    "symbol": "Water Bearer",
+    "image": "vids/aquarius-season.webp",
+    "keywords": [
+      "Innovation",
+      "Humanitarianism",
+      "Individuality",
+      "Revolution",
+      "Vision"
+    ],
+    "lucky_colors": [
+      "Electric Blue",
+      "Turquoise",
+      "Silver"
+    ],
+    "lucky_numbers": [
+      4,
+      7,
+      11
+    ],
+    "lucky_day": "Saturday",
+    "lucky_gemstone": "Amethyst",
+    "body_part": "Ankles and circulatory system",
+    "tarot_card": "The Star",
+    "season": "Winter",
+    "strengths": [
+      "Visionary",
+      "Intellectually brilliant",
+      "Humanitarian",
+      "Original",
+      "Deeply principled"
+    ],
+    "weaknesses": [
+      "Emotionally detached",
+      "Contrarian",
+      "Unpredictable",
+      "Dogmatic about their own views",
+      "Difficulty with intimacy"
+    ],
+    "traits": [
+      "Iconoclastic",
+      "Future-oriented",
+      "Community-minded",
+      "Socially aware but personally aloof",
+      "Proudly eccentric",
+      "Befriends everyone and belongs to no one",
+      "Principle over feeling"
+    ],
+    "love_style": "Aquarius needs a partner who is also a best friend and intellectual equal. They are not naturally demonstrative emotionally and can struggle with traditional relationship structures. They need space, independence, and a partner who finds their strangeness attractive rather than alarming.",
+    "career_strengths": "Born for science, technology, social activism, futurism, invention, psychology, and any field that asks 'what could this become?' They are the disruptors — the ones who see systems that need breaking and have the vision to rebuild them.",
+    "friendship_style": "Aquarius collects fascinating people from every corner of life and treats friendship as a kind of intellectual and humanitarian project. They are loyal in principle but emotionally inconsistent. Their tribe is their family.",
+    "shadow_side": "Aquarius can be paradoxically cold — deeply committed to humanity in the abstract but emotionally unavailable in the specific. Their contrarianism can become reflexive rather than thoughtful, and their detachment can feel like abandonment to those who love them.",
+    "spiritual_lesson": "Letting themselves be truly known. Aquarius must learn that intimacy — real, imperfect, messy human connection — is not a threat to their freedom but its fullest expression.",
+    "famous_examples": [
+      "Rosa Parks",
+      "Abraham Lincoln",
+      "Oprah Winfrey",
+      "Nikola Tesla"
+    ],
+    "compatibility": [
+      "Gemini",
+      "Libra",
+      "Sagittarius"
+    ],
+    "least_compatible": [
+      "Taurus",
+      "Scorpio"
+    ],
+    "description": "Aquarius is the zodiac's great visionary — a fixed air sign ruled by Uranus, planet of revolution, disruption, and sudden illumination. This is the sign that sees the future before it arrives and is restless until the world catches up. Paradoxically fixed and radical, Aquarius holds their unconventional beliefs with iron certainty while refusing to be held by anyone else's conventions. They rule the 11th house of community, friendship, and collective dreams — and their orientation is always outward, toward the group, the cause, the future generation. The Water Bearer pours knowledge into the world not for personal gain but for the good of all. This makes Aquarius one of the most altruistic signs — and sometimes the loneliest, as they live in a future others cannot yet see. At their finest, Aquarius is the revolutionary who loves humanity enough to reimagine it."
+  },
+  "pisces": {
+    "sign-info-img": "vids/traits/pis.gif",
+    "sign-img-detail": "vids/about/pis-i.webp",
+    "name": "Pisces",
+    "dates": "February 19 – March 20",
+    "element": "Water",
+    "modality": "Mutable",
+    "polarity": "Negative",
+    "ruling_planet": "Neptune",
+    "ruling_planet_traditional": "Jupiter",
+    "house": "12th House",
+    "symbol": "Fish",
+    "image": "vids/pisces-season.webp",
+    "keywords": [
+      "Dreams",
+      "Compassion",
+      "Intuition",
+      "Transcendence",
+      "Dissolution"
+    ],
+    "lucky_colors": [
+      "Sea Green",
+      "Lavender",
+      "Soft White"
+    ],
+    "lucky_numbers": [
+      3,
+      7,
+      12
+    ],
+    "lucky_day": "Thursday",
+    "lucky_gemstone": "Aquamarine",
+    "body_part": "Feet and lymphatic system",
+    "tarot_card": "The Moon",
+    "season": "Late Winter",
+    "strengths": [
+      "Profoundly empathetic",
+      "Deeply creative",
+      "Spiritually intuitive",
+      "Selflessly giving",
+      "Adaptable"
+    ],
+    "weaknesses": [
+      "Escapist",
+      "Easily overwhelmed",
+      "Martyr complex",
+      "Difficulty with boundaries",
+      "Self-deception"
+    ],
+    "traits": [
+      "Deeply spiritual",
+      "Porous emotional boundaries",
+      "Lives partly in another world",
+      "Gifted artist or healer",
+      "Sees the best in everyone",
+      "Absorbs others' emotions like a sponge",
+      "The mystic and the dreamer"
+    ],
+    "love_style": "Pisces loves with boundless compassion and a tendency toward idealization. They are the most romantic sign in the zodiac — they want the fairy tale and the spiritual union simultaneously. Their challenge is maintaining a clear sense of self in a relationship, as they can dissolve into their partner completely.",
+    "career_strengths": "Thrives in music, visual art, film, poetry, healing arts, psychology, spirituality, nonprofit work, and any field that requires imagination or empathy. Their intuition in understanding human nature is their greatest professional asset.",
+    "friendship_style": "Pisces is a deeply empathetic friend who makes people feel understood at a soul level. They absorb others' pain readily and need to be careful of being taken advantage of. They drift in and out of social life — present intensely, then gone into their inner world.",
+    "shadow_side": "Pisces can use escapism — fantasy, substances, constant distraction — to avoid the pain of reality. Their boundaries are so porous that they can lose themselves entirely in relationships or causes, emerging depleted and resentful.",
+    "spiritual_lesson": "Grounding the spiritual in the practical. Pisces must learn to be present in this world — to use their gifts of compassion and vision without dissolving into formlessness.",
+    "famous_examples": [
+      "Albert Einstein",
+      "Rihanna",
+      "Kurt Cobain",
+      "Elizabeth Taylor"
+    ],
+    "compatibility": [
+      "Cancer",
+      "Scorpio",
+      "Capricorn"
+    ],
+    "least_compatible": [
+      "Gemini",
+      "Sagittarius"
+    ],
+    "description": "Pisces is the last sign of the zodiac — and in many ways, it contains all the others. A mutable water sign ruled by Neptune, planet of dreams, illusion, and the dissolution of boundaries, Pisces operates in the space between worlds: between the conscious and unconscious, the spiritual and the material, the self and the other. They are extraordinarily permeable — their empathy is not just emotional but almost psychic, absorbing the energies and feelings of everything around them. This is their greatest gift and their greatest vulnerability. They rule the 12th house: the house of the hidden, the subconscious, the sacred, and the sacrificed. Pisces carries the weight of all human experience within them — and their art, their healing, and their love are their ways of releasing it back into the world. At their highest expression, Pisces transcends the ordinary and touches something holy."
+  }
+}
