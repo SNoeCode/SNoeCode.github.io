@@ -6,35 +6,32 @@ A daily horoscope web app for all 12 zodiac signs with element-based color theme
 
 ## How It Works
 
-The app has two connected repositories that work together:
-
-### This Repo — `SNoeCode.github.io`
+This Repo — `SNoeCode.github.io`
 
 The frontend app. Built with HTML, CSS, and vanilla JavaScript. Reads from `horoscope.json` at runtime using the browser's `fetch()` API.
 
-### Scraper Repo — `horoscope_scraper`
+### Horoscope Generator Repo — `horoscope_generator`
 
-A Python automation repo with a GitHub Action that runs every day at 4am UTC. It calls the **Groq AI API** to generate fresh, original horoscope text for all 12 signs, saves them to `horoscope.json`, then pushes that file directly into this repo using a Personal Access Token.
+A Python script run daily by GitHub Actions. It uses the Groq AI API to generate new horoscopes, updates , and pushes the file to the horoscope.json in the `SNoeCode.github.io` repo.
 
 ```
-Groq API 
+Groq API
      ↓
 update_horoscope.py generates 12 horoscopes
      ↓
-horoscope.json saved in horoscope_scraper repo
+horoscope.json saved to GitHub Actions runner (temporary)
      ↓
-GitHub Action pushes horoscope.json → SNoeCode.github.io
+Workflow copies & pushes horoscope.json → SNoeCode.github.io/main
      ↓
-Frontend reads horoscope.json on button click
 ```
 
 ---
 
 ## Tech Stack
 
-- **HTML5** - semantic structure, ARIA accessibility
+- **HTML5** - semantic structure and accessibility
 - **CSS3** - responsive grid, element-based color themes, animations
-- **Vanilla JavaScript** - fetch API, DOM manipulation, focus management
+- **Vanilla JavaScript** - fetch API, DOM manipulation, theme management
 
 ## Features
 
@@ -44,8 +41,8 @@ Frontend reads horoscope.json on button click
 - 4 selectable page background themes (fire, earth, water, air)
 - Sign detail overlay traits, strengths, weaknesses, lucky numbers, compatibility, and more
 - Loading animations between interactions
-- Accessible -  ESC to close, focus management
 - Responsive - works on desktop, tablet, and mobile
+- Accessible - all images have alt text, close buttons included on all overlays
 
 ---
 
@@ -80,32 +77,22 @@ SNoeCode.github.io/
 
 ---
 
-## Automation Setup (horoscope_scraper repo)
+## Automation Setup — `horoscope_generator`
 
-The daily horoscope generation requires two secrets set in the `horoscope_scraper` repo:
-
-| Secret           | Description                                                 |
-| ---------------- | ----------------------------------------------------------- |
-| `GROQ_API_KEY` | Free API key from groq.com                                  |
-| `GH_PAT`       | GitHub Personal Access Token with write access to this repo |
-
-The GitHub Action runs on this schedule:
-
-```yaml
-on:
-  schedule:
-    - cron: '0 6 * * *'   # every day at 6am UTC
-  workflow_dispatch:        # can also be triggered manually
-```
+Daily horoscope generation is handled automatically via GitHub Actions. Two secrets must be configured in the `horoscope_generator` repo to make it work: a GitHub Personal Access Token and a Groq API key.
 
 ---
 
 ## Attributions
 
-**Color wheel icon**
-[Color wheel icons created by Color creator — Flaticon](https://www.flaticon.com/free-icons/color-wheel)
+[Color Switch](https://icons8.com/icon/CPt6dvVSzIHn/color-switch) icon by [Icons8](https://icons8.com)
 
-**Sign images**
+[GitHub](https://icons8.com/icon/v551nqGeHhGn/github) icon by [Icons8](https://icons8.com)
+
+<a target="_blank" href="https://icons8.com/icon/Uj9DyJeLazL6/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+**Sign images and GIFs**
+
 Sourced from project assets in `pictures/zodiac-signs/`
 
 **Fonts**

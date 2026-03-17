@@ -12,7 +12,6 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.55);
-    background-blend-mode: multiply;
 }
 
 /* slight transparency on the whole page */
@@ -52,14 +51,12 @@ nav {
     display: flex;
     align-items: center;
     gap: 6px;
-    flex-shrink: 0;
 }
 
 /* theme icon image */
 .nav-color img {
     width: 20px;
     height: 20px;
-    flex-shrink: 0;
 }
 
 /* row of zodiac signs buttons in nav */
@@ -176,7 +173,7 @@ button {
     align-content: center;
     cursor: pointer;
     border-radius: 4px;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    transition: transform 0.2s, box-shadow 0.2s;
     font-family: "Shadows Into Light", cursive;
 }
 
@@ -184,7 +181,7 @@ button {
 button:hover {
     transform: scale(1.08);
     filter: brightness(1.25);
-    box-shadow: 0 0 10px currentColor;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* shrinks on click */
@@ -264,13 +261,6 @@ select {
     background: transparent;
     border: none;
     padding: 8px;
-    min-width: 44px;
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 /* sign info overlay */
@@ -287,7 +277,6 @@ select {
     padding: 40px;
     z-index: 200;
     text-align: center;
-    backdrop-filter: blur(4px);
     font-family: "Playwrite NZ Basic", cursive;
 }
 
@@ -394,13 +383,6 @@ ul {
     background: transparent;
     border: none;
     padding: 8px;
-    min-width: 44px;
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 
@@ -466,7 +448,6 @@ ul {
 
 .playwrite-nz-basic {
     font-family: "Playwrite NZ Basic", cursive;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }

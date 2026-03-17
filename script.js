@@ -38,27 +38,25 @@ function applySignButtonColors() {
     const sign = btn.getAttribute("data-sign");
     const theme = getSignColor(sign);
     //using important so theme switcher doesnt overwrite
-    btn.style.setProperty("background-color", theme.nav, "important");
-    btn.style.setProperty("color", theme.text, "important");
-    btn.style.setProperty("border", "1px solid " + theme.text, "important");
+    btn.style.backgroundColor = theme.nav;
+    btn.style.color = theme.text;
+    btn.style.border = "1px solid " + theme.text;
   }
 }
 applySignButtonColors();
 
-//theme backgrounds for the dropdown theme menu
-const themes = {
-  "pictures/themes/fire-theme.gif": { nav: fireColor, text: fireText },
-  "pictures/themes/earth-theme.gif": { nav: earthColor, text: earthText },
-  "pictures/themes/water-theme.gif": { nav: waterColor, text: waterText },
-  "pictures/themes/air-theme.gif": { nav: airColor, text: airText },
-};
-
 //changes the page theme colors and background
 function applyTheme(gif) {
   let theme;
-  //check if the gif has a matching theme
-  if (themes[gif]) {
-    theme = themes[gif];
+  //check which gif was picked and set the colors
+  if (gif === "pictures/themes/fire-theme.gif") {
+    theme = { nav: fireColor, text: fireText };
+  } else if (gif === "pictures/themes/earth-theme.gif") {
+    theme = { nav: earthColor, text: earthText };
+  } else if (gif === "pictures/themes/water-theme.gif") {
+    theme = { nav: waterColor, text: waterText };
+  } else if (gif === "pictures/themes/air-theme.gif") {
+    theme = { nav: airColor, text: airText };
   } else {
     theme = { nav: "black", text: "white" };
   }
@@ -145,21 +143,16 @@ document.getElementById("today-date").textContent =
 //tracks whatever theme is currently active
 let currentTheme = { nav: "black", text: "white" };
 
-//tracks which button was last clicked so we can return focus when a dialog closes
-let lastFocusedElement = null;
-
 //resets to default after 5 minutes
 const THEME_TIMEOUT = 5 * 60 * 1000;
 let themeTimer = null;
 
 function resetToDefault() {
   applyTheme("");
-  localStorage.removeItem("bgGif");
   document.getElementById("bg-select").value = "";
 }
 
 //always start with default on page load
-localStorage.removeItem("bgGif");
 applyTheme("");
 
 //listens for theme changes in the dropdown
@@ -175,32 +168,21 @@ document.getElementById("bg-select").addEventListener("change", function () {
 //close button for the horoscope modal
 document.getElementById("modal-close").addEventListener("click", function () {
   document.getElementById("modal").classList.remove("active");
-  //send focus back to the button that opened the modal
-  if (lastFocusedElement) {
-    lastFocusedElement.focus();
-    lastFocusedElement = null;
-  }
 });
 
 //clicking the backdrop also closes the modal
 document.getElementById("modal").addEventListener("click", function (e) {
   if (e.target === this) {
     this.classList.remove("active");
-    //send focus back to the button that opened the modal
-    if (lastFocusedElement) {
-      lastFocusedElement.focus();
-      lastFocusedElement = null;
-    }
   }
 });
 
 //adds event listener to each horoscope button
 const horoBtn = document.querySelectorAll(".sign-card");
-horoBtn.forEach(function (button) {
-  button.addEventListener("click", function () {
+for (let i = 0; i < horoBtn.length; i++) {
+  horoBtn[i].addEventListener("click", function () {
+    const button = horoBtn[i];
     const sign = button.getAttribute("data-sign");
-    //save this so we can return focus when the modal closes
-    lastFocusedElement = button;
 
     fetch("horoscope.json")
       .then(function (response) {
@@ -261,7 +243,7 @@ horoBtn.forEach(function (button) {
         }, 5000);
       });
   });
-});
+}
 
 //opens the sign info overlay panel
 function openSign(sign) {
@@ -395,8 +377,8 @@ function openSign(sign) {
         "description",
       ];
 
-      for (const id of signInfoFields) {
-        document.getElementById(id).style.color = activeTheme.text;
+      for (let i = 0; i < signInfoFields.length; i++) {
+        document.getElementById(signInfoFields[i]).style.color = activeTheme.text;
       }
 
       // determine background gif based on element
@@ -433,26 +415,3 @@ document
     document.getElementById("sign-info").style.display = "none";
   });
 
-//ESC closes whatever is open at the time
-document.addEventListener("keydown", function (e) {
-  if (e.key !== "Escape") {
-    return;
-  }
-
-  //check the modal first
-  const modal = document.getElementById("modal");
-  if (modal.classList.contains("active")) {
-    modal.classList.remove("active");
-    if (lastFocusedElement) {
-      lastFocusedElement.focus();
-      lastFocusedElement = null;
-    }
-    return;
-  }
-
-  //then check the sign info overlay
-  const signInfo = document.getElementById("sign-info");
-  if (signInfo.style.display === "block") {
-    signInfo.style.display = "none";
-  }
-});
