@@ -1,0 +1,512 @@
+/* clear out browser defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body background settings */
+body {
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: multiply;
+}
+
+/* slight transparency on the whole page */
+.container {
+    opacity: 95%;
+}
+
+/* nav stays at top as you scroll */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* main nav bar layout */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 8px;
+    margin-bottom: 0px;
+}
+
+/* color wheel icon and theme dropdown */
+.nav-color {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+/* theme icon image */
+.nav-color img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* row of zodiac signs buttons in nav */
+.zodiac-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+main {
+    display: block;
+}
+
+/* fun facts,js sets the color */
+.p-learn-container {
+    color: white;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-weight: 400;
+}
+
+/* app title */
+.h1-header {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: "Petit Formal Script", cursive;
+}
+
+/* today's date */
+#today-date {
+    color: white;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-weight: 400;
+}
+
+/* pick your sign heading */
+.h1-container {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: "Shadows Into Light", cursive;
+}
+
+/* center paragraphs */
+p {
+    text-align: center;
+}
+
+/* grid layout for sign cards */
+.sign-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* sign images only  */
+.image-container img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+   
+}
+
+/* each sign card stacks content up */
+.date-name-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* sign name above the image */
+.sign-name {
+    font-size: 35px;
+    font-weight: 800;
+    display: block;
+    font-family: "Shadows Into Light", cursive;
+}
+
+/* get horoscope button */
+.sign-card {
+    height: 40px;
+    padding: 5px;
+    width: 80px;
+}
+
+/* date range text */
+.sign-dates {
+    text-align: center;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-weight: 800;
+    color: white;
+}
+
+/* base styles for all buttons */
+button {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    font-family: "Shadows Into Light", cursive;
+}
+
+/* glow on hover */
+button:hover {
+    transform: scale(1.08);
+    filter: brightness(1.25);
+    box-shadow: 0 0 10px currentColor;
+}
+
+/* shrinks on click */
+button:active {
+    transform: scale(0.96);
+    filter: brightness(0.9);
+}
+
+/* theme picker dropdown */
+select {
+    height: 30px;
+    width: 130px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+/* loading gif inside modal */
+#loading-video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* horoscope text starts hidden - js swaps after 5 seconds */
+#horoscope-result {
+    display: none;
+}
+
+/* backdrop covering screen when modal is open */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* js adds this class to show modal */
+.modal.active {
+    display: flex;
+}
+
+/* modal box */
+.modal-content {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+/* modal sign name heading */
+.modal-content h2 {
+    font-family: "Petit Formal Script", cursive;
+}
+
+/* X close button in modal */
+#modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* sign info overlay */
+#sign-info {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.88);
+    color: white;
+    overflow-y: auto;
+    padding: 40px;
+    z-index: 200;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+/* centers sign info content */
+.sign-info-content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* loading gif*/
+#sign-info-loading {
+    display: none;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+/* sign name headings */
+#name {
+    font-size: 50px;
+    font-family: "Petit Formal Script", cursive;
+}
+
+/* dates below sign name */
+#dates {
+    font-size: x-large;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-weight: 800;
+}
+
+/* section headings inside overlay */
+#sign-info h2 {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Shadows Into Light", cursive;
+}
+
+/* row of facts element, symbol, modality */
+.about-sign {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    font-size: large;
+    gap: 10px;
+}
+
+.about-sign span {
+    font-size: medium;
+    font-weight: 500;
+}
+
+/* list layout for traits, strengths, weaknesses */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 20px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+/* the list items */
+#traits,
+#strengths,
+#keywords,
+#weaknesses {
+    font-size: larger;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+/* all other info paragraphs */
+#lucky_colors { font-size: larger; font-weight: 500; }
+#lucky_numbers { font-size: larger; font-weight: 500; }
+#lucky_day { font-size: larger; font-weight: 500; }
+#lucky_gemstone { font-size: larger; font-weight: 500; }
+#compatibility { font-size: larger; font-weight: 600; }
+#least_compatible { font-size: larger; font-weight: 600; }
+#love_style { font-size: larger; font-weight: 500; }
+#friendship_style { font-size: larger; font-weight: 500; }
+#career_strengths { font-size: larger; font-weight: 500; }
+#shadow_side { font-size: larger; font-weight: 500; }
+#spiritual_lesson { font-size: larger; font-weight: 500; }
+#famous_examples { font-size: larger; font-weight: 500; }
+#description { font-size: larger; font-weight: 500; }
+
+/* close button on the overlay */
+#sign-info-close {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/* footer layout */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 0.9em;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+    object-fit: contain;
+}
+
+.footer-copy {
+    text-align: left;
+    margin: 0px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+}
+
+/* fades on hover */
+.footer-links a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+/* google fonts */
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.petit-formal-script-regular {
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playwrite-nz-basic {
+    font-family: "Playwrite NZ Basic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* tablet - 2 columns */
+@media (max-width: 768px) {
+    .sign-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #sign-info {
+        padding: 20px;
+    }
+    .h1-header,
+    .h1-container {
+        font-size: 26px;
+    }
+}
+
+/* mobile single column */
+@media (max-width: 480px) {
+    .nav-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .sign-grid {
+        grid-template-columns: 1fr;
+    }
+    /* wider buttons on mobile  */
+    .sign-card {
+        width: 120px;
+    }
+    .h1-header,
+    .h1-container {
+        font-size: 22px;
+    }
+}
