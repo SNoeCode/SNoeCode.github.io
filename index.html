@@ -1,167 +1,346 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Shadows+Into+Light&family=Petit+Formal+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>Horoscope Daily</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Horoscope Daily</title>
-</head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-container">
+          <p class="p-learn-container"><b>FUN FACTS About Your Sign</b></p>
 
-<body>
-  <header>
-    <h1 class="h1">Horoscope APP</h1>
-    <p id="today-date">?</p>
-  </header>
+          <div class="zodiac-nav">
+            <button data-sign="aries" onclick="openSign('aries')">Aries</button>
+            <button data-sign="taurus" onclick="openSign('taurus')">
+              Taurus
+            </button>
+            <button data-sign="gemini" onclick="openSign('gemini')">
+              Gemini
+            </button>
+            <button data-sign="cancer" onclick="openSign('cancer')">
+              Cancer
+            </button>
+            <button data-sign="leo" onclick="openSign('leo')">Leo</button>
+            <button data-sign="virgo" onclick="openSign('virgo')">Virgo</button>
+            <button data-sign="libra" onclick="openSign('libra')">Libra</button>
+            <button data-sign="scorpio" onclick="openSign('scorpio')">
+              Scorpio
+            </button>
+            <button data-sign="sagittarius" onclick="openSign('sagittarius')">
+              Sagittarius
+            </button>
+            <button data-sign="capricorn" onclick="openSign('capricorn')">
+              Capricorn
+            </button>
+            <button data-sign="aquarius" onclick="openSign('aquarius')">
+              Aquarius
+            </button>
+            <button data-sign="pisces" onclick="openSign('pisces')">
+              Pisces
+            </button>
+          </div>
 
-  <main>
-    <h1>Pick your sign</h1>
-    <div class="sign-grid">
-      <div class="date-name-container">
-
-        <span class="sign-name">Aries</span>
-        <span class="sign-dates">Mar 21 – Apr 19</span>
-        <div class="image-container">
-          <img src="folder/aries.webp" alt="Aries" />
+          <div class="nav-color">
+            <img src="pictures/wheel.png" alt="" width="20" height="20" />
+            <select id="bg-select">
+              <option value="">Select Theme</option>
+              <option value="pictures/themes/fire-theme.gif">Fire Theme</option>
+              <option value="pictures/themes/earth-theme.gif">
+                Earth Theme
+              </option>
+              <option value="pictures/themes/water-theme.gif">
+                Water Theme
+              </option>
+              <option value="pictures/themes/air-theme.gif">Air Theme</option>
+            </select>
+          </div>
         </div>
-        
-        <button id="btn-sign"  class="sign-card" data-sign="aries">
-          Get Horoscope
-          
-        </button>
-        
-      </div>
-      <div class="date-name-container">
-        <span class="sign-name">Taurus</span>
-        <span class="sign-dates">Apr 20 – May 20</span>
+      </nav>
 
-      <div class="image-container">
-        <img src="folder/taurus.webp" alt="Taurus" />
-      </div>
+      <header>
+        <h1 class="h1-header">Starlit Horoscopes</h1>
+        <p id="today-date"></p>
+      </header>
 
-      <button class="sign-card" data-sign="taurus">button
-      </button>
-</div>
-      <div class="date-name-container">
-        <span class="sign-name">Gemini</span>
-        <span class="sign-dates">May 21 - Jun 20</span>
-        <div class="image-container">
-      
-        <img src="folder/gemini.webp" alt="Gemini" />
-      </div>
-      <button class="sign-card" data-sign="gemini">Button
-</div>
-      
-      </button>
-      <div class="date-name-container">
-        <span class="sign-name">Cancer</span>
-        <span class="sign-dates">Jun 21 – Jul 22</span>
-        
-        <div class="image-container">
-          <img src="folder/cancer.webp" alt="Cancer" />
+      <main>
+        <h2 class="h1-container">Pick your sign</h2>
+
+        <div class="sign-grid">
+          <!-- aries -->
+          <div class="date-name-container">
+            <span class="sign-name">Aries</span>
+            <span class="sign-dates">Mar 21 – Apr 19</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/aries.webp" alt="Aries" />
+            </div>
+            <button class="sign-card" data-sign="aries">Get Horoscope</button>
+          </div>
+
+          <!-- taurus -->
+          <div class="date-name-container">
+            <span class="sign-name">Taurus</span>
+            <span class="sign-dates">Apr 20 – May 20</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/taurus.webp" alt="Taurus" />
+            </div>
+            <button class="sign-card" data-sign="taurus">Get Horoscope</button>
+          </div>
+
+          <!-- gemini -->
+          <div class="date-name-container">
+            <span class="sign-name">Gemini</span>
+            <span class="sign-dates">May 21 – Jun 20</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/gemini.webp" alt="Gemini" />
+            </div>
+            <button class="sign-card" data-sign="gemini">Get Horoscope</button>
+          </div>
+
+          <!-- cancer -->
+          <div class="date-name-container">
+            <span class="sign-name">Cancer</span>
+            <span class="sign-dates">Jun 21 – Jul 22</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/cancer.webp" alt="Cancer" />
+            </div>
+            <button class="sign-card" data-sign="cancer">Get Horoscope</button>
+          </div>
+
+          <!-- leo -->
+          <div class="date-name-container">
+            <span class="sign-name">Leo</span>
+            <span class="sign-dates">Jul 23 – Aug 22</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/leo.webp" alt="Leo" />
+            </div>
+            <button class="sign-card" data-sign="leo">Get Horoscope</button>
+          </div>
+
+          <!-- virgo -->
+          <div class="date-name-container">
+            <span class="sign-name">Virgo</span>
+            <span class="sign-dates">Aug 23 – Sep 22</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/virgo.webp" alt="Virgo" />
+            </div>
+            <button class="sign-card" data-sign="virgo">Get Horoscope</button>
+          </div>
+
+          <!-- libra -->
+          <div class="date-name-container">
+            <span class="sign-name">Libra</span>
+            <span class="sign-dates">Sep 23 – Oct 22</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/libra.webp" alt="Libra" />
+            </div>
+            <button class="sign-card" data-sign="libra">Get Horoscope</button>
+          </div>
+
+          <!-- scorpio -->
+          <div class="date-name-container">
+            <span class="sign-name">Scorpio</span>
+            <span class="sign-dates">Oct 23 – Nov 21</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/scorpio.webp" alt="Scorpio" />
+            </div>
+            <button class="sign-card" data-sign="scorpio">Get Horoscope</button>
+          </div>
+
+          <!-- sagittarius -->
+          <div class="date-name-container">
+            <span class="sign-name">Sagittarius</span>
+            <span class="sign-dates">Nov 22 – Dec 21</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/sag.webp" alt="Sagittarius" />
+            </div>
+            <button class="sign-card" data-sign="sagittarius">
+              Get Horoscope
+            </button>
+          </div>
+
+          <!-- capricorn -->
+          <div class="date-name-container">
+            <span class="sign-name">Capricorn</span>
+            <span class="sign-dates">Dec 22 – Jan 19</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/capricorn.webp" alt="Capricorn" />
+            </div>
+            <button class="sign-card" data-sign="capricorn">
+              Get Horoscope
+            </button>
+          </div>
+
+          <!-- aquarius -->
+          <div class="date-name-container">
+            <span class="sign-name">Aquarius</span>
+            <span class="sign-dates">Jan 20 – Feb 18</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/aquarius.webp" alt="Aquarius" />
+            </div>
+            <button class="sign-card" data-sign="aquarius">
+              Get Horoscope
+            </button>
+          </div>
+
+          <!-- pisces -->
+          <div class="date-name-container">
+            <span class="sign-name">Pisces</span>
+            <span class="sign-dates">Feb 19 – Mar 20</span>
+            <div class="image-container">
+              <img src="pictures/zodiac-signs/pisces.webp" alt="Pisces" />
+            </div>
+            <button class="sign-card" data-sign="pisces">Get Horoscope</button>
+          </div>
         </div>
-        <button id="btn-sign"  class="sign-card" data-sign='cancer'>
-        button</button>
-      </div>
-      <div class="date-name-container">
-        <span class="sign-name">Leo</span>
-        <span class="sign-dates">July 23 - Aug 22</span>
-
-      <div class="image-container">
-        <img src="folder/leo.webp" alt="Leo" />
-       </div> 
- 
-       <button class="sign-card" data-sign="leo">
-      butoon</button>
-    </div> 
-
-
-      <div class="date-name-container">
-        <span class="sign-name">Virgo</span>
-        <span class="sign-dates">Aug 23 - Sep 22</span>
-
-      <div class="image-container">
-        <img src="folder/virgo.webp" alt="virgo" />
-      </div>
-
-      <button id="btn-sign"  class="sign-card" data-sign="virgo">
-      button
-      </button>
-      </div>
-      <div class="date-name-container">
-        <span class="sign-name">Libra</span>
-        <span class="sign-dates">Sep 23 - Oct 22</span>
-      
-      <div class="image-container">
-        <img src="folder/libra.webp" alt="libra" />
-      </div>
-
-      <button id="btn-sign"  class="sign-card" data-sign="libra">
-      button</button>
+      </main>
     </div>
-      <div class="date-name-container">
-        <span class="sign-name">Scorpio</span>
-        <span class="sign-dates">Oct 23 - Nov 21</span>
 
-      <div class="image-container">
-        <img src="folder/scorpio.webp" alt="scorpio" />
+    <!-- horoscope modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button id="modal-close">&times;</button>
+        <img
+          id="loading-video"
+          src="pictures/video.gif"
+          alt="Loading horoscope"
+        />
+        <div id="horoscope-result"></div>
       </div>
-
-      <button id="btn-sign"  class="sign-card" data-sign="scorpio">
-      button
-      </button>
     </div>
-      <div class="date-name-container">
-        <span class="sign-name">Sagittarius</span>
-        <span class="sign-dates">Nov 22 - Dec 21</span>
 
-      <div class="image-container">
-        <img src="folder/sag.webp" alt="sagittarius" />
-      </div>
+    <!-- sign details overlay -->
+    <div id="sign-info">
+      <button id="sign-info-close">&times;</button>
+      <img
+        id="sign-info-loading"
+        src="pictures/video.gif"
+        alt="Loading sign information"
+      />
+      <div class="sign-info-content">
+        <h1 id="name"></h1>
+        <p id="dates"></p>
 
-      <button id="btn-sign" 
-      class="sign-card" data-sign="sagittarius">
-      button</button>
-      </div>
-      <div class="date-name-container">
-        <span class="sign-name">Capricorn</span>
-        <span class="sign-dates">Dec 22 - Jan 19</span>
-
-      <div class="image-container">
-        <img src="folder/capricorn.webp" alt="capricorn" />
-      </div>
-      <button id="btn-sign"  class="sign-card" data-sign="capricorn">
-      
-      button
-    </button>
-    </div>
-    <div class="date-name-container">
-      <span class="sign-name">Aquarius</span>
-      <span class="sign-dates">Jan 20 - Feb 18</span>
-
-      <div class="image-container">
-        <img src="folder/aquarius.webp" alt="aquarius" />
-      </div>
-      
-      <button id="btn-sign" class="sign-card" data-sign="aquarius">
-      button 
-      </button>
-    </div>
-      <div class="date-name-container">
-        <span class="sign-name">Pisces</span>
-        <span class="sign-dates">Feb 19 - Mar 20</span>
-    
-    <div class="image-container">
-        <img src="folder/pisces.webp" alt="pisces" />
+        <div class="about-sign">
+          <div><strong>Element:</strong> <span id="element"></span></div>
+          <div><strong>Symbol:</strong> <span id="symbol"></span></div>
+          <div><strong>Modality:</strong> <span id="modality"></span></div>
+          <div><strong>Polarity:</strong> <span id="polarity"></span></div>
+          <div>
+            <strong>Ruling Planet:</strong> <span id="ruling_planet"></span>
+          </div>
+          <div>
+            <strong>Traditional Ruler:</strong>
+            <span id="ruling_planet_traditional"></span>
+          </div>
+          <div><strong>House:</strong> <span id="house"></span></div>
+          <div><strong>Season:</strong> <span id="season"></span></div>
+          <div><strong>Tarot Card:</strong> <span id="tarot_card"></span></div>
+          <div><strong>Body Part:</strong> <span id="body_part"></span></div>
         </div>
-    
-      <button class="sign-card" data-sign="pisces">
-        Button
-     </button>
-    </div>   
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
 
+        <h2>Keywords</h2>
+        <p id="keywords"></p>
+
+        <h2>Traits</h2>
+        <ul id="traits"></ul>
+
+        <h2>Strengths</h2>
+        <ul id="strengths"></ul>
+
+        <h2>Weaknesses</h2>
+        <ul id="weaknesses"></ul>
+
+        <h2>Lucky Colors</h2>
+        <p id="lucky_colors"></p>
+
+        <h2>Lucky Numbers</h2>
+        <p id="lucky_numbers"></p>
+
+        <h2>Lucky Day</h2>
+        <p id="lucky_day"></p>
+
+        <h2>Lucky Gemstone</h2>
+        <p id="lucky_gemstone"></p>
+
+        <h2>Compatible With</h2>
+        <p id="compatibility"></p>
+
+        <h2>Least Compatible</h2>
+        <p id="least_compatible"></p>
+
+        <h2>Love Style</h2>
+        <p id="love_style"></p>
+
+        <h2>Friendship Style</h2>
+        <p id="friendship_style"></p>
+
+        <h2>Career Strengths</h2>
+        <p id="career_strengths"></p>
+
+        <h2>Shadow Side</h2>
+        <p id="shadow_side"></p>
+
+        <h2>Spiritual Lesson</h2>
+        <p id="spiritual_lesson"></p>
+
+        <h2>Famous Examples</h2>
+        <p id="famous_examples"></p>
+
+        <h2>Description</h2>
+        <p id="description"></p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p class="footer-copy">&copy; 2026 Shanna Noe. All rights reserved.</p>
+      <div class="footer-links">
+        <a
+          href="https://snoecode.github.io/portfolio_shanna.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="pictures/dev.png"
+            alt="Portfolio"
+            class="footer-icon"
+          />Portfolio
+        </a>
+        <a
+          href="https://www.linkedin.com/in/shanna-noe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="pictures/linkedin.gif"
+            alt="LinkedIn"
+            class="footer-icon"
+          />LinkedIn
+        </a>
+        <a
+          href="https://github.com/SNoeCode"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="pictures/github.gif"
+            alt="GitHub"
+            class="footer-icon"
+          />GitHub
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
