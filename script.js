@@ -155,39 +155,37 @@ function resetToDefault() {
 applyTheme("");
 
 //listens for theme changes in the dropdown
-document.getElementById("bg-select").addEventListener("change", function () {
-  applyTheme(this.value);
+document.getElementById("bg-select").addEventListener("change", (e) => {
+  applyTheme(e.target.value);
   clearTimeout(themeTimer);
-  if (this.value) {
+  if (e.target.value) {
     //resets to default after 5 minutes
     themeTimer = setTimeout(resetToDefault, THEME_TIMEOUT);
   }
 });
 
 //close button for the horoscope modal
-document.getElementById("modal-close").addEventListener("click", function () {
+document.getElementById("modal-close").addEventListener("click", () => {
   document.getElementById("modal").classList.remove("active");
 });
 
 //clicking the backdrop also closes the modal
-document.getElementById("modal").addEventListener("click", function (e) {
-  if (e.target === this) {
-    this.classList.remove("active");
+document.getElementById("modal").addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    e.currentTarget.classList.remove("active");
   }
 });
 
 //adds event listener to each horoscope button
 const horoBtn = document.querySelectorAll(".sign-card");
 for (let i = 0; i < horoBtn.length; i++) {
-  horoBtn[i].addEventListener("click", function () {
+  horoBtn[i].addEventListener("click", () => {
     const button = horoBtn[i];
     const sign = button.getAttribute("data-sign");
 
     fetch("horoscope.json")
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
+      .then((response) => response.json())
+      .then((data) => {
         const horoscope = data[sign].summary;
         const video = document.getElementById("loading-video");
         const result = document.getElementById("horoscope-result");
@@ -235,10 +233,14 @@ for (let i = 0; i < horoBtn.length; i++) {
         result.style.display = "none";
 
         //after 5 seconds swap the gif for the horoscope text
-        setTimeout(function () {
+        setTimeout(() => {
           video.style.display = "none";
           result.style.display = "block";
         }, 5000);
+      })
+      .catch(() => {
+        document.getElementById("modal").classList.remove("active");
+        alert("Could not load horoscope data. Please try again.");
       });
   });
 }
@@ -255,10 +257,8 @@ function openSign(sign) {
   signContent.style.display = "none";
 
   fetch("zodiac.json")
-    .then(function (res) {
-      return res.json();
-    })
-    .then(function (data) {
+    .then((res) => res.json())
+    .then((data) => {
       const info = data[sign];
 
       //fills in all the text fields
@@ -399,16 +399,27 @@ function openSign(sign) {
         "')";
 
       //wait 3 seconds then swap the loading gif for the horoscope
-      setTimeout(function () {
+      setTimeout(() => {
         loadingGif.style.display = "none";
         signContent.style.display = "block";
       }, 3000);
+    })
+    .catch(() => {
+      document.getElementById("sign-info").style.display = "none";
+      alert("Could not load sign data. Please try again.");
     });
 }
 
 //close the sign info
 document
   .getElementById("sign-info-close")
-  .addEventListener("click", function () {
+  .addEventListener("click", () => {
     document.getElementById("sign-info").style.display = "none";
   });
+
+//clicking the backdrop also closes the sign info overlay
+document.getElementById("sign-info").addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    e.currentTarget.style.display = "none";
+  }
+});
