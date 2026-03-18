@@ -43,7 +43,6 @@ function applySignButtonColors() {
     btn.style.border = "1px solid " + theme.text;
   }
 }
-applySignButtonColors();
 
 //changes the page theme colors and background
 function applyTheme(gif) {
@@ -197,9 +196,8 @@ for (let i = 0; i < horoBtn.length; i++) {
         const modalTheme =
           currentTheme.nav === "black" ? getSignColor(sign) : currentTheme;
 
-        //sets modal background
+        //sets modal border color
         const modalContent = document.querySelector(".modal-content");
-        modalContent.style.background = "#000";
         modalContent.style.border = "1px solid " + modalTheme.text;
 
         //close button color
@@ -217,7 +215,7 @@ for (let i = 0; i < horoBtn.length; i++) {
           " Horoscope</h2>" +
           '<p class="modal-date" style="color:' +
           modalTheme.nav +
-          '; font-size:14px; font-weight: bold;">' +
+          '; font-size:20px; font-weight: bold;">' +
           todayDate.toLocaleDateString("en-US", {
             weekday: "long",
             year: "numeric",
@@ -343,9 +341,9 @@ function openSign(sign) {
       }
 
       //the bold label words like "Element:" "Symbol:" etc
-      const strongTxt = document.querySelectorAll(".about-sign strong");
-      for (let i = 0; i < strongTxt.length; i++) {
-        strongTxt[i].style.color = activeTheme.nav;
+      const boldTxt = document.querySelectorAll(".about-sign b");
+      for (let i = 0; i < boldTxt.length; i++) {
+        boldTxt[i].style.color = activeTheme.nav;
       }
 
       //the actual values next to those labels
@@ -414,4 +412,3 @@ document
   .addEventListener("click", function () {
     document.getElementById("sign-info").style.display = "none";
   });
-

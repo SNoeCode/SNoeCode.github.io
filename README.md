@@ -32,6 +32,7 @@ Workflow copies & pushes horoscope.json → SNoeCode.github.io/main
 - **HTML5** - semantic structure and accessibility
 - **CSS3** - responsive grid, element-based color themes, animations
 - **Vanilla JavaScript** - fetch API, DOM manipulation, theme management
+- No frameworks or libraries are used in the repos
 
 ## Features
 

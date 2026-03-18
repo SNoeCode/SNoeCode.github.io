@@ -1,4 +1,3 @@
-/* clear out browser defaults */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,15 +10,9 @@ body {
     background-position: center;
     background-repeat: repeat;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.55);
 }
 
-/* slight transparency on the whole page */
-.container {
-    opacity: 95%;
-}
-
-/* nav stays at top as you scroll */
+/* nav stays at top */
 nav {
     position: sticky;
     top: 0;
@@ -67,12 +60,8 @@ nav {
     justify-content: center;
 }
 
-main {
-    display: block;
-}
-
 /* fun facts,js sets the color */
-.p-learn-container {
+.fun-container {
     color: white;
     font-family: "Playwrite NZ Basic", cursive;
     font-weight: 400;
@@ -82,14 +71,17 @@ main {
 .h1-header {
     text-align: center;
     color: white;
-    font-size: 35px;
+    font-size: 45px;
     font-family: "Petit Formal Script", cursive;
+    /* font-family: "Shadows Into Light", cursive; */
 }
 
 /* today's date */
 #today-date {
     color: white;
-    font-family: "Playwrite NZ Basic", cursive;
+    font-family: "Oregano", cursive;
+    font-size: 30px;
+
     font-weight: 400;
 }
 
@@ -122,7 +114,7 @@ p {
     width: 170px;
     height: 170px;
     object-fit: contain;
-   
+
 }
 
 /* each sign card stacks content up */
@@ -141,7 +133,7 @@ p {
     font-size: 35px;
     font-weight: 800;
     display: block;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Sedgwick Ave", cursive;
 }
 
 /* get horoscope button */
@@ -205,7 +197,6 @@ select {
 /* loading gif inside modal */
 #loading-video {
     width: 100%;
-    height: 100%;
     display: block;
     object-fit: cover;
 }
@@ -248,7 +239,8 @@ select {
 
 /* modal sign name heading */
 .modal-content h2 {
-    font-family: "Petit Formal Script", cursive;
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 40px;
 }
 
 /* X close button in modal */
@@ -271,13 +263,13 @@ select {
     left: 0px;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.88);
     color: white;
     overflow-y: auto;
     padding: 40px;
     z-index: 200;
     text-align: center;
-    font-family: "Playwrite NZ Basic", cursive;
+    font-weight: 400;
+    font-family: "Mystery Quest", system-ui;
 }
 
 /* centers sign info content */
@@ -286,6 +278,7 @@ select {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 13px;
 }
 
 /* loading gif*/
@@ -300,13 +293,15 @@ select {
 
 /* sign name headings */
 #name {
-    font-size: 50px;
-    font-family: "Petit Formal Script", cursive;
+    font-size: 40px;
+    /* font-family: "Petit Formal Script", cursive; */
+    font-family: "Mystery Quest", system-ui;
+
 }
 
 /* dates below sign name */
 #dates {
-    font-size: x-large;
+    font-size: 20px;
     font-family: "Playwrite NZ Basic", cursive;
     font-weight: 800;
 }
@@ -318,11 +313,13 @@ select {
     flex-direction: column;
     justify-items: center;
     text-align: center;
+    font-weight: 400;
     font-size: xx-large;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Mystery Quest", system-ui;
+
 }
 
-/* row of facts element, symbol, modality */
+/* row of element, symbol, modality */
 .about-sign {
     display: flex;
     flex-wrap: wrap;
@@ -351,27 +348,33 @@ ul {
 /* the list items */
 #traits,
 #strengths,
-#keywords,
 #weaknesses {
     font-size: larger;
     font-weight: 500;
-    list-style-type: none;
 }
 
 /* all other info paragraphs */
-#lucky_colors { font-size: larger; font-weight: 500; }
-#lucky_numbers { font-size: larger; font-weight: 500; }
-#lucky_day { font-size: larger; font-weight: 500; }
-#lucky_gemstone { font-size: larger; font-weight: 500; }
-#compatibility { font-size: larger; font-weight: 600; }
-#least_compatible { font-size: larger; font-weight: 600; }
-#love_style { font-size: larger; font-weight: 500; }
-#friendship_style { font-size: larger; font-weight: 500; }
-#career_strengths { font-size: larger; font-weight: 500; }
-#shadow_side { font-size: larger; font-weight: 500; }
-#spiritual_lesson { font-size: larger; font-weight: 500; }
-#famous_examples { font-size: larger; font-weight: 500; }
-#description { font-size: larger; font-weight: 500; }
+#keywords,
+#lucky_colors,
+#lucky_numbers,
+#lucky_day,
+#lucky_gemstone,
+#love_style,
+#friendship_style,
+#career_strengths,
+#shadow_side,
+#spiritual_lesson,
+#famous_examples,
+#description {
+    font-size: larger;
+    font-weight: 500;
+}
+
+#compatibility,
+#least_compatible {
+    font-size: larger;
+    font-weight: 600;
+}
 
 /* close button on the overlay */
 #sign-info-close {
@@ -434,24 +437,6 @@ ul {
     text-decoration: underline;
 }
 
-/* google fonts */
-.shadows-into-light-regular {
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-.petit-formal-script-regular {
-  font-family: "Petit Formal Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.playwrite-nz-basic {
-    font-family: "Playwrite NZ Basic", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
 @media (max-width: 900px) {
     .nav-container {
         padding-left: 16px;
@@ -464,9 +449,11 @@ ul {
     .sign-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     #sign-info {
         padding: 20px;
     }
+
     .h1-header,
     .h1-container {
         font-size: 26px;
@@ -479,13 +466,16 @@ ul {
         padding-left: 12px;
         padding-right: 12px;
     }
+
     .sign-grid {
         grid-template-columns: 1fr;
     }
+
     /* wider buttons on mobile  */
     .sign-card {
         width: 120px;
     }
+
     .h1-header,
     .h1-container {
         font-size: 22px;

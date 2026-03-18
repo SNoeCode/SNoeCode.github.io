@@ -6,18 +6,17 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Shadows+Into+Light&family=Petit+Formal+Script&display=swap"
-      rel="stylesheet"
-    />
-    <title>Horoscope Daily</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Oregano:ital@0;1&family=Petit+Formal+Script&family=Playwrite+NZ+Basic:wght@100..400&family=Rum+Raisin&family=Sedgwick+Ave&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Starlit Horoscope Daily</title>
   </head>
 
   <body>
     <div class="container">
       <nav>
         <div class="nav-container">
-          <p class="p-learn-container"><b>FUN FACTS About Your Sign</b></p>
+          <p class="fun-container"><b>FUN FACTS About Your Sign</b></p>
 
           <div class="zodiac-nav">
             <button data-sign="aries" onclick="openSign('aries')">Aries</button>
@@ -229,23 +228,21 @@
       <div class="sign-info-content">
         <h1 id="name"></h1>
         <p id="dates"></p>
-
+        <br />
         <div class="about-sign">
-          <div><strong>Element:</strong> <span id="element"></span></div>
-          <div><strong>Symbol:</strong> <span id="symbol"></span></div>
-          <div><strong>Modality:</strong> <span id="modality"></span></div>
-          <div><strong>Polarity:</strong> <span id="polarity"></span></div>
+          <div><b>Element:</b> <span id="element"></span></div>
+          <div><b>Symbol:</b> <span id="symbol"></span></div>
+          <div><b>Modality:</b> <span id="modality"></span></div>
+          <div><b>Polarity:</b> <span id="polarity"></span></div>
+          <div><b>Ruling Planet:</b> <span id="ruling_planet"></span></div>
           <div>
-            <strong>Ruling Planet:</strong> <span id="ruling_planet"></span>
-          </div>
-          <div>
-            <strong>Traditional Ruler:</strong>
+            <b>Traditional Ruler:</b>
             <span id="ruling_planet_traditional"></span>
           </div>
-          <div><strong>House:</strong> <span id="house"></span></div>
-          <div><strong>Season:</strong> <span id="season"></span></div>
-          <div><strong>Tarot Card:</strong> <span id="tarot_card"></span></div>
-          <div><strong>Body Part:</strong> <span id="body_part"></span></div>
+          <div><b>House:</b> <span id="house"></span></div>
+          <div><b>Season:</b> <span id="season"></span></div>
+          <div><b>Tarot Card:</b> <span id="tarot_card"></span></div>
+          <div><b>Body Part:</b> <span id="body_part"></span></div>
         </div>
 
         <h2>Keywords</h2>
