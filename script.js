@@ -81,7 +81,7 @@ function applyTheme(gif) {
   }
 
   //title and date use the darker theme color, white in default
-  const titleColor = theme.nav === 'black' ? 'white' : theme.nav;
+  const titleColor = theme.nav === "black" ? "white" : theme.nav;
   const darkColor = document.querySelectorAll(".h1-header, #today-date");
   for (let i = 0; i < darkColor.length; i++) {
     darkColor[i].style.color = titleColor;
@@ -169,79 +169,87 @@ document.getElementById("modal-close").addEventListener("click", () => {
   document.getElementById("modal").classList.remove("active");
 });
 
-//clicking the backdrop also closes the modal
+//clicking the backdrop closes modal
 document.getElementById("modal").addEventListener("click", (e) => {
   if (e.target === e.currentTarget) {
     e.currentTarget.classList.remove("active");
   }
 });
 
+//loads horoscope from today or yesterdays jsnon
+function loadHoroscope(sign, file) {
+  const video = document.getElementById("loading-video");
+  const result = document.getElementById("horoscope-result");
+  const yesterdayBtn = document.getElementById("yesterday-btn");
+  const modalTheme =
+    currentTheme.nav === "black" ? getSignColor(sign) : currentTheme;
+  const isYesterday = file === "horoscope_yesterday.json";
+
+  yesterdayBtn.style.display = "none";
+  video.style.display = isYesterday ? "none" : "block";
+  result.style.display = isYesterday ? "block" : "none";
+
+  fetch(file)
+    .then((response) => response.json())
+    .then((data) => {
+      const horoscope = data[sign].summary;
+      const dateLabel = data[sign].date;
+
+      result.innerHTML =
+        '<h2 id="modal-heading" style="color:' +
+        modalTheme.text +
+        '">' +
+        sign.toUpperCase() +
+        " Horoscope</h2>" +
+        '<p class="modal-date" style="color:' +
+        modalTheme.nav +
+        '; font-size:20px; font-weight: bold;">' +
+        dateLabel +
+        "</p>" +
+        '<p style="color:' +
+        modalTheme.text +
+        '">' +
+        horoscope +
+        "</p>";
+
+      const show = () => {
+        video.style.display = "none";
+        result.style.display = "block";
+        if (!isYesterday) {
+          yesterdayBtn.style.display = "block";
+          yesterdayBtn.style.color = modalTheme.text;
+          yesterdayBtn.style.borderColor = modalTheme.text;
+        }
+      };
+
+      isYesterday ? show() : setTimeout(show, 5000);
+    })
+    .catch(() => {
+      document.getElementById("modal").classList.remove("active");
+      alert("Could not load horoscope data. Please try again.");
+    });
+}
+
 //adds event listener to each horoscope button
 const horoBtn = document.querySelectorAll(".sign-card");
 for (let i = 0; i < horoBtn.length; i++) {
   horoBtn[i].addEventListener("click", () => {
-    const button = horoBtn[i];
-    const sign = button.getAttribute("data-sign");
+    const sign = horoBtn[i].getAttribute("data-sign");
+    const modalTheme =
+      currentTheme.nav === "black" ? getSignColor(sign) : currentTheme;
 
-    fetch("horoscope.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const horoscope = data[sign].summary;
-        const video = document.getElementById("loading-video");
-        const result = document.getElementById("horoscope-result");
+    document.querySelector(".modal-content").style.border =
+      "1px solid " + modalTheme.text;
+    document.getElementById("modal-close").style.color = modalTheme.text;
+    document.getElementById("loading-video").src =
+      "pictures/season/" + sign + "-season.webp";
+    document.getElementById("modal").classList.add("active");
 
-        //uses signs element colors by default
-        const modalTheme =
-          currentTheme.nav === "black" ? getSignColor(sign) : currentTheme;
+    document.getElementById("yesterday-btn").onclick = () => {
+      loadHoroscope(sign, "horoscope_yesterday.json");
+    };
 
-        //sets modal border color
-        const modalContent = document.querySelector(".modal-content");
-        modalContent.style.border = "1px solid " + modalTheme.text;
-
-        //close button color
-        document.getElementById("modal-close").style.color = modalTheme.text;
-
-        //sets the loading gif
-        video.src = "pictures/season/" + sign + "-season.webp";
-
-        //builds the html for the horoscope result
-        result.innerHTML =
-          '<h2 id="modal-heading" style="color:' +
-          modalTheme.text +
-          '">' +
-          sign.toUpperCase() +
-          " Horoscope</h2>" +
-          '<p class="modal-date" style="color:' +
-          modalTheme.nav +
-          '; font-size:20px; font-weight: bold;">' +
-          todayDate.toLocaleDateString("en-US", {
-            weekday: "long",
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          }) +
-          "</p>" +
-          '<p style="color:' +
-          modalTheme.text +
-          '">' +
-          horoscope +
-          "</p>";
-
-        //shows the modal with the loading gif first
-        document.getElementById("modal").classList.add("active");
-        video.style.display = "block";
-        result.style.display = "none";
-
-        //after 5 seconds swap the gif for the horoscope text
-        setTimeout(() => {
-          video.style.display = "none";
-          result.style.display = "block";
-        }, 5000);
-      })
-      .catch(() => {
-        document.getElementById("modal").classList.remove("active");
-        alert("Could not load horoscope data. Please try again.");
-      });
+    loadHoroscope(sign, "horoscope.json");
   });
 }
 
@@ -330,7 +338,7 @@ function openSign(sign) {
       const activeTheme =
         currentTheme.nav === "black" ? getSignColor(sign) : currentTheme;
 
-      //sign name gets the bright color, date gets the darker one
+      //sign name gets the bright color, date gets darker one
       document.getElementById("name").style.color = activeTheme.text;
       document.getElementById("dates").style.color = activeTheme.nav;
 
@@ -340,13 +348,13 @@ function openSign(sign) {
         headings[i].style.color = activeTheme.nav;
       }
 
-      //the bold label words like "Element:" "Symbol:" etc
+      //the bold label words like
       const boldTxt = document.querySelectorAll(".about-sign b");
       for (let i = 0; i < boldTxt.length; i++) {
         boldTxt[i].style.color = activeTheme.nav;
       }
 
-      //the actual values next to those labels
+      //actual values next to those labels
       const spanTxt = document.querySelectorAll(".about-sign span");
       for (let i = 0; i < spanTxt.length; i++) {
         spanTxt[i].style.color = activeTheme.text;
@@ -376,7 +384,8 @@ function openSign(sign) {
       ];
 
       for (let i = 0; i < signInfoFields.length; i++) {
-        document.getElementById(signInfoFields[i]).style.color = activeTheme.text;
+        document.getElementById(signInfoFields[i]).style.color =
+          activeTheme.text;
       }
 
       // determine background gif based on element
@@ -392,7 +401,7 @@ function openSign(sign) {
         bgGif = "pictures/themes/air-theme.gif";
       }
 
-      //dark gradient layered on top of the gif so the text is actually readable
+      //dark gradient top of gif so the text is readable
       overlay.style.backgroundImage =
         "linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)), url('" +
         bgGif +
@@ -411,11 +420,9 @@ function openSign(sign) {
 }
 
 //close the sign info
-document
-  .getElementById("sign-info-close")
-  .addEventListener("click", () => {
-    document.getElementById("sign-info").style.display = "none";
-  });
+document.getElementById("sign-info-close").addEventListener("click", () => {
+  document.getElementById("sign-info").style.display = "none";
+});
 
 //clicking the backdrop also closes the sign info overlay
 document.getElementById("sign-info").addEventListener("click", (e) => {
