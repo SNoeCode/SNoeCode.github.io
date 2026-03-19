@@ -10,7 +10,7 @@ This Repo — `SNoeCode.github.io`
 
 The frontend app. Built with HTML, CSS, and vanilla JavaScript. Reads from `horoscope.json` at runtime using the browser's `fetch()` API.
 
-### Horoscope Generator Repo — `horoscope_generator`
+### Horoscope Generator Repo — `horoscope_generator  https://github.com/SNoeCode/horoscope_generator`
 
 A Python script run daily by GitHub Actions. It uses the Groq AI API to generate new horoscopes, updates , and pushes the file to the horoscope.json in the `SNoeCode.github.io` repo.
 
