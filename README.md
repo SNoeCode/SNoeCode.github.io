@@ -21,7 +21,9 @@ update_horoscope.py generates 12 horoscopes
      ↓
 horoscope.json saved to GitHub Actions runner (temporary)
      ↓
-Workflow copies & pushes horoscope.json → SNoeCode.github.io/main
+Workflow rotates horoscope.json → horoscope_yesterday.json
+     ↓
+Workflow copies & pushes both files → SNoeCode.github.io/main
      ↓
 ```
 
@@ -38,6 +40,7 @@ Workflow copies & pushes horoscope.json → SNoeCode.github.io/main
 
 - 12 zodiac signs with images and date ranges
 - Daily AI-generated horoscopes, refreshed every morning
+- Yesterday's horoscopes preserved and accessible via `horoscope_yesterday.json`
 - Element-based color themes fire, earth, water, and air signs each have unique colors
 - 4 selectable page background themes (fire, earth, water, air)
 - Sign detail overlay traits, strengths, weaknesses, lucky numbers, compatibility, and more
@@ -62,8 +65,9 @@ SNoeCode.github.io/
 ├── index.html          # main app structure
 ├── styles.css          # all styling and responsive layout
 ├── script.js           # all app logic and interactivity
-├── horoscope.json      # auto-updated daily by GitHub Action
-├── zodiac.json         # static sign data (traits, symbols, etc.)
+├── horoscope.json           # today's horoscopes, auto-updated daily by GitHub Action
+├── horoscope_yesterday.json # previous day's horoscopes, rotated automatically
+├── zodiac.json              # static sign data (traits, symbols, etc.)
 └── pictures/           # all media assets
     ├── rain.gif            # default background
     ├── video.gif           # loading animation
